@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<title>捏泡泡 · Bubble Wrap</title>
-<meta name="description" content="无限泡泡纸，捏一个少一个。Bubble wrap you can pop forever. No install, no account.">
+<title>Bubble Wrap — pop every single one</title>
+<meta name="description" content="Infinite bubble wrap you can pop forever. Drag across the sheet, every bubble dents and stays dented. No install, no account.">
 <style>
   :root { --bg:#0c1426; --card:#121d33; --ink:#e8eef9; --dim:#7f8ea8; --accent:#22d3ee; }
   * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
   html,body { margin:0; height:100%; overflow:hidden; background:var(--bg); color:var(--ink);
-    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Segoe UI",Roboto,sans-serif; }
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
   #wrap { position:fixed; inset:0; display:flex; flex-direction:column; }
   header { display:flex; align-items:center; justify-content:space-between; padding:14px 18px;
     font-size:13px; letter-spacing:.02em; color:var(--dim); z-index:3; }
@@ -36,13 +36,13 @@
 <body>
 <div id="wrap">
   <header>
-    <b>捏泡泡</b>
-    <span><span id="score">0</span> / <span id="total">0</span> 已捏</span>
+    <b>Bubble Wrap</b>
+    <span><span id="score">0</span> / <span id="total">0</span> popped</span>
   </header>
   <canvas id="c"></canvas>
 </div>
-<div id="hint">按住拖动，一路捏过去 →</div>
-<div id="allDone"><div><h1>全部捏完 🎉</h1><p>手瘾还没过够？</p><button id="again">再来一整张</button></div></div>
+<div id="hint">Hold and drag across the sheet →</div>
+<div id="allDone"><div><h1>All popped 🎉</h1><p>Still have the urge?</p><button id="again">New sheet</button></div></div>
 <footer>made by <a href="https://ko-fi.com/yaoengineering" target="_blank" rel="noopener">Yao Engineering</a></footer>
 
 <script>
